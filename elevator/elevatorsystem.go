@@ -1,0 +1,5 @@
+package elevator
+
+func Init() {
+
+}
