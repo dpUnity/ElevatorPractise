@@ -1,0 +1,360 @@
+Elevator 1 initialized at floor 1
+Elevator 2 initialized at floor 1
+Passenger  1 created: floor  7 → floor  9
+Passenger  2 created: floor  2 → floor  8
+[t=  2] Passenger  1 queued    at floor  7 →  9
+[t=  2] Passenger  1 → Elevator 1 (idle,     dist=6)
+[t=  2] Passenger  2 queued    at floor  2 →  8
+[t=  2] Passenger  2 → Elevator 2 (idle,     dist=1)
+[t=  2] Elevator 1 moved    → floor  2 (dir=UP, onboard=0)
+[t=  2] Elevator 2 moved    → floor  2 (dir=UP, onboard=0)
+[t=  3] Elevator 1 moved    → floor  3 (dir=UP, onboard=0)
+[t=  3] Elevator 2 stopping at floor  2 (onboard=0)
+[t=  3] Passenger  2 boarded   Elevator 2 at floor  2 →  8
+Passenger  3 created: floor  5 → floor  8
+[t=  4] Passenger  3 queued    at floor  5 →  8
+[t=  4] Passenger  3 → Elevator 1 (en route, dist=2)
+Passenger  4 created: floor 10 → floor  4
+[t=  4] Elevator 1 moved    → floor  4 (dir=UP, onboard=0)
+[t=  4] Elevator 2 moved    → floor  3 (dir=UP, onboard=1)
+[t=  5] Passenger  4 queued    at floor 10 →  4
+[t=  5] Passenger  4 waiting   at floor 10 (no elevator available)
+Passenger  5 created: floor  9 → floor  7
+[t=  5] Elevator 1 moved    → floor  5 (dir=UP, onboard=0)
+[t=  5] Elevator 2 moved    → floor  4 (dir=UP, onboard=1)
+[t=  6] Passenger  5 queued    at floor  9 →  7
+[t=  6] Passenger  5 waiting   at floor  9 (no elevator available)
+Passenger  6 created: floor  6 → floor  7
+[t=  6] Elevator 1 stopping at floor  5 (onboard=0)
+[t=  6] Passenger  3 boarded   Elevator 1 at floor  5 →  8
+[t=  6] Elevator 2 moved    → floor  5 (dir=UP, onboard=1)
+[t=  7] Passenger  6 queued    at floor  6 →  7
+[t=  7] Passenger  6 → Elevator 1 (en route, dist=1)
+Passenger  7 created: floor 10 → floor  1
+[t=  7] Elevator 1 moved    → floor  6 (dir=UP, onboard=1)
+[t=  7] Elevator 2 moved    → floor  6 (dir=UP, onboard=1)
+[t=  8] Passenger  7 queued    at floor 10 →  1
+[t=  8] Passenger  7 waiting   at floor 10 (no elevator available)
+[t=  8] Elevator 1 stopping at floor  6 (onboard=1)
+[t=  8] Passenger  6 boarded   Elevator 1 at floor  6 →  7
+[t=  8] Elevator 2 moved    → floor  7 (dir=UP, onboard=1)
+Passenger  8 created: floor 10 → floor  9
+[t=  9] Passenger  8 queued    at floor 10 →  9
+[t=  9] Passenger  8 waiting   at floor 10 (no elevator available)
+[t=  9] Elevator 1 moved    → floor  7 (dir=UP, onboard=2)
+[t=  9] Elevator 2 moved    → floor  8 (dir=UP, onboard=1)
+Passenger  9 created: floor  3 → floor  7
+Passenger 10 created: floor  1 → floor  5
+[t= 10] Passenger  9 queued    at floor  3 →  7
+[t= 10] Passenger  9 waiting   at floor  3 (no elevator available)
+[t= 10] Passenger 10 queued    at floor  1 →  5
+[t= 10] Passenger 10 waiting   at floor  1 (no elevator available)
+[t= 10] Elevator 1 stopping at floor  7 (onboard=2)
+[t= 10] Passenger  6 arrived   at floor  7 (Elevator 1)
+[t= 10] Passenger  1 boarded   Elevator 1 at floor  7 →  9
+[t= 10] Elevator 2 stopping at floor  8 (onboard=1)
+[t= 10] Passenger  2 arrived   at floor  8 (Elevator 2)
+[t= 10] Elevator 2 IDLE     at floor  8
+[t= 10] Passenger 10 → Elevator 2 (idle,     dist=7)
+[t= 11] Elevator 1 moved    → floor  8 (dir=UP, onboard=2)
+[t= 11] Elevator 2 moved    → floor  7 (dir=DOWN, onboard=0)
+Passenger 11 created: floor 10 → floor  6
+Passenger 12 created: floor  1 → floor  9
+[t= 12] Passenger 11 queued    at floor 10 →  6
+[t= 12] Passenger 11 waiting   at floor 10 (no elevator available)
+[t= 12] Passenger 12 queued    at floor  1 →  9
+[t= 12] Passenger 12 waiting   at floor  1 (no elevator available)
+[t= 12] Elevator 1 stopping at floor  8 (onboard=2)
+[t= 12] Passenger  3 arrived   at floor  8 (Elevator 1)
+[t= 12] Elevator 2 moved    → floor  6 (dir=DOWN, onboard=0)
+[t= 13] Elevator 1 moved    → floor  9 (dir=UP, onboard=1)
+[t= 13] Elevator 2 moved    → floor  5 (dir=DOWN, onboard=0)
+Passenger 13 created: floor  6 → floor  4
+Passenger 14 created: floor  7 → floor  3
+[t= 14] Passenger 13 queued    at floor  6 →  4
+[t= 14] Passenger 13 waiting   at floor  6 (no elevator available)
+[t= 14] Passenger 14 queued    at floor  7 →  3
+[t= 14] Passenger 14 waiting   at floor  7 (no elevator available)
+[t= 14] Elevator 1 stopping at floor  9 (onboard=1)
+[t= 14] Passenger  1 arrived   at floor  9 (Elevator 1)
+[t= 14] Passenger  5 boarded   Elevator 1 at floor  9 →  7
+[t= 14] Elevator 2 moved    → floor  4 (dir=DOWN, onboard=0)
+[t= 14] Passenger 13 → Elevator 1 (en route, dist=3)
+[t= 15] Elevator 1 moved    → floor  8 (dir=DOWN, onboard=1)
+[t= 15] Elevator 2 moved    → floor  3 (dir=DOWN, onboard=0)
+Passenger 15 created: floor  9 → floor  3
+[t= 16] Passenger 15 queued    at floor  9 →  3
+[t= 16] Passenger 15 waiting   at floor  9 (no elevator available)
+[t= 16] Elevator 1 moved    → floor  7 (dir=DOWN, onboard=1)
+[t= 16] Elevator 2 moved    → floor  2 (dir=DOWN, onboard=0)
+Passenger 16 created: floor 10 → floor  1
+[t= 17] Passenger 16 queued    at floor 10 →  1
+[t= 17] Passenger 16 waiting   at floor 10 (no elevator available)
+[t= 17] Elevator 1 stopping at floor  7 (onboard=1)
+[t= 17] Passenger  5 arrived   at floor  7 (Elevator 1)
+[t= 17] Passenger 14 boarded   Elevator 1 at floor  7 →  3
+[t= 17] Elevator 2 moved    → floor  1 (dir=DOWN, onboard=0)
+Passenger 17 created: floor  6 → floor  1
+[t= 18] Passenger 17 queued    at floor  6 →  1
+[t= 18] Passenger 17 → Elevator 1 (en route, dist=1)
+[t= 18] Elevator 1 moved    → floor  6 (dir=DOWN, onboard=1)
+[t= 18] Elevator 2 stopping at floor  1 (onboard=0)
+[t= 18] Passenger 10 boarded   Elevator 2 at floor  1 →  5
+[t= 18] Passenger 12 boarded   Elevator 2 at floor  1 →  9
+Passenger 18 created: floor  2 → floor  4
+[t= 19] Passenger 18 queued    at floor  2 →  4
+[t= 19] Passenger 18 → Elevator 2 (en route, dist=1)
+[t= 19] Elevator 1 stopping at floor  6 (onboard=1)
+[t= 19] Passenger 13 boarded   Elevator 1 at floor  6 →  4
+[t= 19] Passenger 17 boarded   Elevator 1 at floor  6 →  1
+[t= 19] Elevator 2 moved    → floor  2 (dir=UP, onboard=2)
+Passenger 19 created: floor  6 → floor  8
+[t= 20] Passenger 19 queued    at floor  6 →  8
+[t= 20] Passenger 19 → Elevator 2 (en route, dist=4)
+[t= 20] Elevator 1 moved    → floor  5 (dir=DOWN, onboard=3)
+[t= 20] Elevator 2 stopping at floor  2 (onboard=2)
+[t= 20] Passenger 18 boarded   Elevator 2 at floor  2 →  4
+Passenger 20 created: floor  4 → floor  1
+[t= 21] Passenger 20 queued    at floor  4 →  1
+[t= 21] Passenger 20 → Elevator 1 (en route, dist=1)
+[t= 21] Elevator 1 moved    → floor  4 (dir=DOWN, onboard=3)
+[t= 21] Elevator 2 moved    → floor  3 (dir=UP, onboard=3)
+Passenger 21 created: floor  2 → floor  5
+[t= 22] Passenger 21 queued    at floor  2 →  5
+[t= 22] Passenger 21 waiting   at floor  2 (no elevator available)
+[t= 22] Elevator 1 stopping at floor  4 (onboard=3)
+[t= 22] Passenger 13 arrived   at floor  4 (Elevator 1)
+[t= 22] Passenger 20 boarded   Elevator 1 at floor  4 →  1
+[t= 22] Elevator 2 moved    → floor  4 (dir=UP, onboard=3)
+Passenger 22 created: floor  2 → floor  5
+[t= 23] Passenger 22 queued    at floor  2 →  5
+[t= 23] Passenger 22 waiting   at floor  2 (no elevator available)
+[t= 23] Elevator 1 moved    → floor  3 (dir=DOWN, onboard=3)
+[t= 23] Elevator 2 stopping at floor  4 (onboard=3)
+[t= 23] Passenger 18 arrived   at floor  4 (Elevator 2)
+Passenger 23 created: floor  9 → floor  1
+[t= 24] Passenger 23 queued    at floor  9 →  1
+[t= 24] Passenger 23 waiting   at floor  9 (no elevator available)
+[t= 24] Elevator 1 stopping at floor  3 (onboard=3)
+[t= 24] Passenger 14 arrived   at floor  3 (Elevator 1)
+[t= 24] Elevator 2 moved    → floor  5 (dir=UP, onboard=2)
+Passenger 24 created: floor  3 → floor  1
+[t= 25] Passenger 24 queued    at floor  3 →  1
+[t= 25] Passenger 24 → Elevator 1 (en route, dist=0)
+[t= 25] Elevator 1 stopping at floor  3 (onboard=2)
+[t= 25] Passenger 24 boarded   Elevator 1 at floor  3 →  1
+[t= 25] Elevator 2 stopping at floor  5 (onboard=2)
+[t= 25] Passenger 10 arrived   at floor  5 (Elevator 2)
+Passenger 25 created: floor 10 → floor  2
+[t= 26] Passenger 25 queued    at floor 10 →  2
+[t= 26] Passenger 25 waiting   at floor 10 (no elevator available)
+[t= 26] Elevator 1 moved    → floor  2 (dir=DOWN, onboard=3)
+[t= 26] Elevator 2 moved    → floor  6 (dir=UP, onboard=1)
+Passenger 26 created: floor  2 → floor  9
+[t= 27] Passenger 26 queued    at floor  2 →  9
+[t= 27] Passenger 26 waiting   at floor  2 (no elevator available)
+Passenger 27 created: floor  2 → floor  7
+[t= 27] Elevator 1 moved    → floor  1 (dir=DOWN, onboard=3)
+[t= 27] Elevator 2 stopping at floor  6 (onboard=1)
+[t= 27] Passenger 19 boarded   Elevator 2 at floor  6 →  8
+[t= 28] Passenger 27 queued    at floor  2 →  7
+[t= 28] Passenger 27 waiting   at floor  2 (no elevator available)
+[t= 28] Elevator 1 stopping at floor  1 (onboard=3)
+[t= 28] Passenger 17 arrived   at floor  1 (Elevator 1)
+[t= 28] Passenger 20 arrived   at floor  1 (Elevator 1)
+[t= 28] Passenger 24 arrived   at floor  1 (Elevator 1)
+[t= 28] Elevator 1 IDLE     at floor  1
+[t= 28] Elevator 2 moved    → floor  7 (dir=UP, onboard=2)
+[t= 28] Passenger 21 → Elevator 1 (idle,     dist=1)
+[t= 28] Passenger  9 → Elevator 1 (en route, dist=2)
+Passenger 28 created: floor  4 → floor  5
+[t= 29] Passenger 28 queued    at floor  4 →  5
+[t= 29] Passenger 28 → Elevator 1 (en route, dist=3)
+[t= 29] Elevator 1 moved    → floor  2 (dir=UP, onboard=0)
+[t= 29] Elevator 2 moved    → floor  8 (dir=UP, onboard=2)
+Passenger 29 created: floor  2 → floor  6
+[t= 30] Passenger 29 queued    at floor  2 →  6
+[t= 30] Passenger 29 → Elevator 1 (en route, dist=0)
+[t= 30] Elevator 1 stopping at floor  2 (onboard=0)
+[t= 30] Passenger 21 boarded   Elevator 1 at floor  2 →  5
+[t= 30] Passenger 22 boarded   Elevator 1 at floor  2 →  5
+[t= 30] Passenger 26 boarded   Elevator 1 at floor  2 →  9
+[t= 30] Passenger 27 boarded   Elevator 1 at floor  2 →  7
+[t= 30] Passenger 29 boarded   Elevator 1 at floor  2 →  6
+[t= 30] Elevator 2 stopping at floor  8 (onboard=2)
+[t= 30] Passenger 19 arrived   at floor  8 (Elevator 2)
+Passenger 30 created: floor 10 → floor  6
+[t= 31] Passenger 30 queued    at floor 10 →  6
+[t= 31] Passenger 30 waiting   at floor 10 (no elevator available)
+[t= 31] Elevator 1 moved    → floor  3 (dir=UP, onboard=5)
+Passenger 31 created: floor 10 → floor  2
+[t= 31] Elevator 2 moved    → floor  9 (dir=UP, onboard=1)
+[t= 32] Passenger 31 queued    at floor 10 →  2
+[t= 32] Passenger 31 waiting   at floor 10 (no elevator available)
+[t= 32] Elevator 1 stopping at floor  3 (onboard=5)
+[t= 32] Elevator 2 stopping at floor  9 (onboard=1)
+[t= 32] Passenger 12 arrived   at floor  9 (Elevator 2)
+[t= 32] Passenger 15 boarded   Elevator 2 at floor  9 →  3
+[t= 32] Passenger 23 boarded   Elevator 2 at floor  9 →  1
+Passenger 32 created: floor  1 → floor  5
+Passenger 33 created: floor  8 → floor  3
+[t= 33] Passenger 32 queued    at floor  1 →  5
+[t= 33] Passenger 32 waiting   at floor  1 (no elevator available)
+[t= 33] Passenger 33 queued    at floor  8 →  3
+[t= 33] Passenger 33 → Elevator 2 (en route, dist=1)
+[t= 33] Elevator 1 moved    → floor  4 (dir=UP, onboard=5)
+[t= 33] Elevator 2 moved    → floor  8 (dir=DOWN, onboard=2)
+[t= 34] Elevator 1 stopping at floor  4 (onboard=5)
+[t= 34] Elevator 2 stopping at floor  8 (onboard=2)
+Passenger 34 created: floor  4 → floor  1
+[t= 34] Passenger 33 boarded   Elevator 2 at floor  8 →  3
+[t= 35] Passenger 34 queued    at floor  4 →  1
+[t= 35] Passenger 34 → Elevator 2 (en route, dist=4)
+Passenger 35 created: floor  2 → floor  7
+[t= 35] Elevator 1 moved    → floor  5 (dir=UP, onboard=5)
+[t= 35] Elevator 2 moved    → floor  7 (dir=DOWN, onboard=3)
+[t= 36] Passenger 35 queued    at floor  2 →  7
+[t= 36] Passenger 35 waiting   at floor  2 (no elevator available)
+[t= 36] Elevator 1 stopping at floor  5 (onboard=5)
+[t= 36] Passenger 21 arrived   at floor  5 (Elevator 1)
+[t= 36] Passenger 22 arrived   at floor  5 (Elevator 1)
+[t= 36] Elevator 2 moved    → floor  6 (dir=DOWN, onboard=3)
+Passenger 36 created: floor  7 → floor  8
+[t= 37] Passenger 36 queued    at floor  7 →  8
+[t= 37] Passenger 36 → Elevator 1 (en route, dist=2)
+[t= 37] Elevator 1 moved    → floor  6 (dir=UP, onboard=3)
+[t= 37] Elevator 2 moved    → floor  5 (dir=DOWN, onboard=3)
+Passenger 37 created: floor  3 → floor  5
+[t= 38] Passenger 37 queued    at floor  3 →  5
+[t= 38] Passenger 37 waiting   at floor  3 (no elevator available)
+[t= 38] Elevator 1 stopping at floor  6 (onboard=3)
+Passenger 38 created: floor  9 → floor  2
+[t= 38] Passenger 29 arrived   at floor  6 (Elevator 1)
+[t= 38] Elevator 2 moved    → floor  4 (dir=DOWN, onboard=3)
+[t= 39] Passenger 38 queued    at floor  9 →  2
+[t= 39] Passenger 38 waiting   at floor  9 (no elevator available)
+[t= 39] Elevator 1 moved    → floor  7 (dir=UP, onboard=2)
+[t= 39] Elevator 2 stopping at floor  4 (onboard=3)
+Passenger 39 created: floor 10 → floor  4
+[t= 39] Passenger 34 boarded   Elevator 2 at floor  4 →  1
+[t= 40] Passenger 39 queued    at floor 10 →  4
+[t= 40] Passenger 39 waiting   at floor 10 (no elevator available)
+[t= 40] Elevator 1 stopping at floor  7 (onboard=2)
+Passenger 40 created: floor  2 → floor  7
+[t= 40] Passenger 27 arrived   at floor  7 (Elevator 1)
+[t= 40] Passenger 36 boarded   Elevator 1 at floor  7 →  8
+[t= 40] Elevator 2 moved    → floor  3 (dir=DOWN, onboard=4)
+[t= 41] Passenger 40 queued    at floor  2 →  7
+[t= 41] Passenger 40 waiting   at floor  2 (no elevator available)
+[t= 41] Elevator 1 moved    → floor  8 (dir=UP, onboard=2)
+[t= 41] Elevator 2 stopping at floor  3 (onboard=4)
+[t= 41] Passenger 15 arrived   at floor  3 (Elevator 2)
+[t= 41] Passenger 33 arrived   at floor  3 (Elevator 2)
+[t= 42] Elevator 1 stopping at floor  8 (onboard=2)
+[t= 42] Passenger 36 arrived   at floor  8 (Elevator 1)
+[t= 42] Elevator 2 moved    → floor  2 (dir=DOWN, onboard=2)
+[t= 43] Elevator 1 moved    → floor  9 (dir=UP, onboard=1)
+[t= 43] Elevator 2 moved    → floor  1 (dir=DOWN, onboard=2)
+[t= 44] Elevator 1 stopping at floor  9 (onboard=1)
+[t= 44] Passenger 26 arrived   at floor  9 (Elevator 1)
+[t= 44] Passenger 38 boarded   Elevator 1 at floor  9 →  2
+[t= 44] Elevator 2 stopping at floor  1 (onboard=2)
+[t= 44] Passenger 23 arrived   at floor  1 (Elevator 2)
+[t= 44] Passenger 34 arrived   at floor  1 (Elevator 2)
+[t= 44] Passenger 32 boarded   Elevator 2 at floor  1 →  5
+[t= 44] Passenger  9 → Elevator 2 (en route, dist=2)
+[t= 44] Passenger 28 → Elevator 2 (en route, dist=3)
+[t= 45] Elevator 1 moved    → floor  8 (dir=DOWN, onboard=1)
+[t= 45] Elevator 2 moved    → floor  2 (dir=UP, onboard=1)
+[t= 46] Elevator 1 moved    → floor  7 (dir=DOWN, onboard=1)
+[t= 46] Elevator 2 moved    → floor  3 (dir=UP, onboard=1)
+[t= 47] Elevator 1 moved    → floor  6 (dir=DOWN, onboard=1)
+[t= 47] Elevator 2 stopping at floor  3 (onboard=1)
+[t= 47] Passenger  9 boarded   Elevator 2 at floor  3 →  7
+[t= 47] Passenger 37 boarded   Elevator 2 at floor  3 →  5
+[t= 48] Elevator 1 moved    → floor  5 (dir=DOWN, onboard=1)
+[t= 48] Elevator 2 moved    → floor  4 (dir=UP, onboard=3)
+[t= 49] Elevator 1 moved    → floor  4 (dir=DOWN, onboard=1)
+[t= 49] Elevator 2 stopping at floor  4 (onboard=3)
+[t= 49] Passenger 28 boarded   Elevator 2 at floor  4 →  5
+[t= 50] Elevator 1 moved    → floor  3 (dir=DOWN, onboard=1)
+[t= 50] Elevator 2 moved    → floor  5 (dir=UP, onboard=4)
+[t= 51] Elevator 1 moved    → floor  2 (dir=DOWN, onboard=1)
+[t= 51] Elevator 2 stopping at floor  5 (onboard=4)
+[t= 51] Passenger 32 arrived   at floor  5 (Elevator 2)
+[t= 51] Passenger 37 arrived   at floor  5 (Elevator 2)
+[t= 51] Passenger 28 arrived   at floor  5 (Elevator 2)
+[t= 52] Elevator 1 stopping at floor  2 (onboard=1)
+[t= 52] Passenger 38 arrived   at floor  2 (Elevator 1)
+[t= 52] Passenger 35 boarded   Elevator 1 at floor  2 →  7
+[t= 52] Passenger 40 boarded   Elevator 1 at floor  2 →  7
+[t= 52] Elevator 2 moved    → floor  6 (dir=UP, onboard=1)
+[t= 53] Elevator 1 moved    → floor  3 (dir=UP, onboard=2)
+[t= 53] Elevator 2 moved    → floor  7 (dir=UP, onboard=1)
+[t= 54] Elevator 1 moved    → floor  4 (dir=UP, onboard=2)
+[t= 54] Elevator 2 stopping at floor  7 (onboard=1)
+[t= 54] Passenger  9 arrived   at floor  7 (Elevator 2)
+[t= 54] Elevator 2 IDLE     at floor  7
+[t= 54] Passenger  4 → Elevator 2 (idle,     dist=3)
+[t= 55] Elevator 1 moved    → floor  5 (dir=UP, onboard=2)
+[t= 55] Elevator 2 moved    → floor  8 (dir=UP, onboard=0)
+[t= 56] Elevator 1 moved    → floor  6 (dir=UP, onboard=2)
+[t= 56] Elevator 2 moved    → floor  9 (dir=UP, onboard=0)
+[t= 57] Elevator 1 moved    → floor  7 (dir=UP, onboard=2)
+[t= 57] Elevator 2 moved    → floor 10 (dir=UP, onboard=0)
+[t= 58] Elevator 1 stopping at floor  7 (onboard=2)
+[t= 58] Passenger 35 arrived   at floor  7 (Elevator 1)
+[t= 58] Passenger 40 arrived   at floor  7 (Elevator 1)
+[t= 58] Elevator 1 IDLE     at floor  7
+[t= 58] Elevator 2 stopping at floor 10 (onboard=0)
+[t= 58] Passenger  4 boarded   Elevator 2 at floor 10 →  4
+[t= 58] Passenger  7 boarded   Elevator 2 at floor 10 →  1
+[t= 58] Passenger  8 boarded   Elevator 2 at floor 10 →  9
+[t= 58] Passenger 11 boarded   Elevator 2 at floor 10 →  6
+[t= 58] Passenger 16 boarded   Elevator 2 at floor 10 →  1
+[t= 58] Passenger 25 → Elevator 1 (idle,     dist=3)
+[t= 59] Elevator 1 moved    → floor  8 (dir=UP, onboard=0)
+[t= 59] Elevator 2 moved    → floor  9 (dir=DOWN, onboard=5)
+[t= 60] Elevator 1 moved    → floor  9 (dir=UP, onboard=0)
+[t= 60] Elevator 2 stopping at floor  9 (onboard=5)
+[t= 60] Passenger  8 arrived   at floor  9 (Elevator 2)
+[t= 61] Elevator 1 moved    → floor 10 (dir=UP, onboard=0)
+[t= 61] Elevator 2 moved    → floor  8 (dir=DOWN, onboard=4)
+[t= 62] Elevator 1 stopping at floor 10 (onboard=0)
+[t= 62] Passenger 25 boarded   Elevator 1 at floor 10 →  2
+[t= 62] Passenger 30 boarded   Elevator 1 at floor 10 →  6
+[t= 62] Passenger 31 boarded   Elevator 1 at floor 10 →  2
+[t= 62] Passenger 39 boarded   Elevator 1 at floor 10 →  4
+[t= 62] Elevator 2 moved    → floor  7 (dir=DOWN, onboard=4)
+[t= 63] Elevator 1 moved    → floor  9 (dir=DOWN, onboard=4)
+[t= 63] Elevator 2 moved    → floor  6 (dir=DOWN, onboard=4)
+[t= 64] Elevator 1 moved    → floor  8 (dir=DOWN, onboard=4)
+[t= 64] Elevator 2 stopping at floor  6 (onboard=4)
+[t= 64] Passenger 11 arrived   at floor  6 (Elevator 2)
+[t= 65] Elevator 1 moved    → floor  7 (dir=DOWN, onboard=4)
+[t= 65] Elevator 2 moved    → floor  5 (dir=DOWN, onboard=3)
+[t= 66] Elevator 1 moved    → floor  6 (dir=DOWN, onboard=4)
+[t= 66] Elevator 2 moved    → floor  4 (dir=DOWN, onboard=3)
+[t= 67] Elevator 1 stopping at floor  6 (onboard=4)
+[t= 67] Passenger 30 arrived   at floor  6 (Elevator 1)
+[t= 67] Elevator 2 stopping at floor  4 (onboard=3)
+[t= 67] Passenger  4 arrived   at floor  4 (Elevator 2)
+[t= 68] Elevator 1 moved    → floor  5 (dir=DOWN, onboard=3)
+[t= 68] Elevator 2 moved    → floor  3 (dir=DOWN, onboard=2)
+[t= 69] Elevator 1 moved    → floor  4 (dir=DOWN, onboard=3)
+[t= 69] Elevator 2 moved    → floor  2 (dir=DOWN, onboard=2)
+[t= 70] Elevator 1 stopping at floor  4 (onboard=3)
+[t= 70] Passenger 39 arrived   at floor  4 (Elevator 1)
+[t= 70] Elevator 2 moved    → floor  1 (dir=DOWN, onboard=2)
+[t= 71] Elevator 1 moved    → floor  3 (dir=DOWN, onboard=2)
+[t= 71] Elevator 2 stopping at floor  1 (onboard=2)
+[t= 71] Passenger  7 arrived   at floor  1 (Elevator 2)
+[t= 71] Passenger 16 arrived   at floor  1 (Elevator 2)
+[t= 71] Elevator 2 IDLE     at floor  1
+[t= 72] Elevator 1 moved    → floor  2 (dir=DOWN, onboard=2)
+[t= 73] Elevator 1 stopping at floor  2 (onboard=2)
+[t= 73] Passenger 25 arrived   at floor  2 (Elevator 1)
+[t= 73] Passenger 31 arrived   at floor  2 (Elevator 1)
+[t= 73] Elevator 1 IDLE     at floor  2
+
+=== All 40 passengers served in 73 seconds ===
